@@ -8,21 +8,3 @@ $hotelBuilder = new HotelBuilder($input);
 $hotelBuilder->buildHotels();
 
 print_r($hotelBuilder->buildHotels()->calculateRate());
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
