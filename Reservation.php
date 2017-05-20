@@ -34,7 +34,7 @@ class Reservation
     }
 
     /*
-    * Method responsible for calculating Regular rate
+    * Method responsible for processing rate calculations based on weekdays and weekendays
     */
     public function processRate($hotel, $code)
     {
