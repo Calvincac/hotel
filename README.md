@@ -3,7 +3,7 @@ Software responsible for finding the cheapest hotel based on dates provided. It 
 
 Introduction to the problem:
  
-There must be a way to supply the application with the input data via text file. The application must run. You should provide sufficient evidence that your solution is complete by, as a minimum, indicating that it works correctly against the supplied test data. Please note that you will be assessed on your judgment as well as your execution.
+The application must run. You should provide sufficient evidence that your solution is complete by, as a minimum, indicating that it works correctly against the supplied test data. Please note that you will be assessed on your judgment as well as your execution.
  
 Hotel Reservation Problem
  
