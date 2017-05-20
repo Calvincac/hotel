@@ -21,11 +21,11 @@ class Reservation
         foreach($this->hotels as $hotel) {
             if ($hotel->getCustomer()->isRegular()) {
                 $regularCode = 0;
-                $total = $this->calculateRateRegular($hotel, $regularCode);
+                $total = $this->processRate($hotel, $regularCode);
                 $this->getCheapestHotel =  $this->getCheapestHotel($total, $hotel);            
             } else {
                 $rewardCode = 1;
-                $total = $this->calculateRateReward($hotel, $rewardCode);
+                $total = $this->processRate($hotel, $rewardCode);
                 $this->getCheapestHotel = $this->getCheapestHotel($total, $hotel);                
             }                       
         }
@@ -36,7 +36,7 @@ class Reservation
     /*
     * Method responsible for calculating Regular rate
     */
-    public function calculateRateRegular($hotel, $code)
+    public function processRate($hotel, $code)
     {
         if ($hotel->getDay()->hasWeekend()) {
             $sumOfweekends =  $hotel->getDay()->getSumOfWeekendDays();            
@@ -45,23 +45,6 @@ class Reservation
         $sumOfweekDays =  $hotel->getDay()->getSumOfWeekDays();
         $weekPrice = $this->calculateWeekRate($sumOfweekDays, $hotel, $code);
         $total = $weekPrice + $this->weekendPrice; 
-
-        return $total;
-    }
-
-    /*
-    * Method responsible for calculating Reward rate
-    */
-    public function calculateRateReward($hotel, $code)
-    {
-        if ($hotel->getDay()->hasWeekend()) {
-            $sumOfweekends =  $hotel->getDay()->getSumOfWeekendDays();            
-            $this->weekendPrice = $this->calculateWeekendRate($sumOfweekends, $hotel, $code);                      
-        }
-        
-        $sumOfweekDays =  $hotel->getDay()->getSumOfWeekDays();
-        $weekPrice = $this->calculateWeekRate($sumOfweekDays, $hotel, $code);
-        $total = $weekPrice + $this->weekendPrice;
 
         return $total;
     }
