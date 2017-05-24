@@ -29,7 +29,6 @@ class Reservation
                 $this->getCheapestHotel = $this->getCheapestHotel($total, $hotel);                
             }                       
         }
-
         return $this->getCheapestHotel;         
     }
 

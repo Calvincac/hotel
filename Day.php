@@ -41,7 +41,6 @@ class Day
                 $weekendDays++;
             } 
         }
-
         return  $weekendDays;
     }
 
@@ -57,7 +56,6 @@ class Day
                 $weekDays++;
             } 
         }
-
         return  $weekDays;
     }
 
@@ -69,7 +67,6 @@ class Day
         if (in_array("sat", $this->days) || in_array("sun", $this->days) ) {
             return true;            
         }
-
         return false;
     }
 }
