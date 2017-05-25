@@ -2,7 +2,7 @@
 
 require_once "HotelBuilder.php";
 
-$input = "Regular: 16Mar2009(mon), 17Mar2009(tues), 18Mar2009(wed)";
+$input = "Rewards: 26Mar2009(thur), 27Mar2009(fri), 28Mar2009(sat)";
 
 $hotelBuilder = new HotelBuilder($input);
 

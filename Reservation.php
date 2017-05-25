@@ -19,15 +19,8 @@ class Reservation
     public function calculateRate()
     {
         foreach($this->hotels as $hotel) {
-            if ($hotel->getCustomer()->isRegular()) {
-                $regularCode = 0;
-                $total = $this->processRate($hotel, $regularCode);
-                $this->getCheapestHotel =  $this->getCheapestHotel($total, $hotel);            
-            } else {
-                $rewardCode = 1;
-                $total = $this->processRate($hotel, $rewardCode);
-                $this->getCheapestHotel = $this->getCheapestHotel($total, $hotel);                
-            }                       
+            $total = $this->processRate($hotel, ($hotel->getCustomer()->isRegular()) ? 0 : 1 );
+            $this->getCheapestHotel = $this->getCheapestHotel($total, $hotel);
         }
         return $this->getCheapestHotel;         
     }
