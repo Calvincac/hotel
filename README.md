@@ -17,19 +17,19 @@ Ridgewood with a rating of 5 has weekday rates as 220$ for regular customer and 
 Write a program to help an online customer find the cheapest hotel.
 The input to the program will be a range of dates for a regular or rewards customer. The output should be the cheapest available hotel. In case of a tie, the hotel with highest rating should be returned.
  
-INPUT FORMAT:
-<customer_type>: <date1>, <date2>, <date3>, ...
-OUTPUT FORMAT:
-<name_of_the_cheapest_hotel>
-INPUT 1:
-Regular: 16Mar2009(mon), 17Mar2009(tues), 18Mar2009(wed)
-OUTPUT 1:
-Lakewood
-INPUT 2:
-Regular: 20Mar2009(fri), 21Mar2009(sat), 22Mar2009(sun)
-OUTPUT 2:
-Bridgewood
-INPUT 3:
-Rewards: 26Mar2009(thur), 27Mar2009(fri), 28Mar2009(sat)
-OUTPUT 3:
-Ridgewood
+INPUT FORMAT: <br>
+<customer_type>: <date1>, <date2>, <date3>, ... <br>
+OUTPUT FORMAT: <br>
+<name_of_the_cheapest_hotel> <br>
+INPUT 1: <br>
+Regular: 16Mar2009(mon), 17Mar2009(tues), 18Mar2009(wed) <br>
+OUTPUT 1: <br>
+Lakewood <br>
+INPUT 2: <br>
+Regular: 20Mar2009(fri), 21Mar2009(sat), 22Mar2009(sun) <br>
+OUTPUT 2: <br>
+Bridgewood <br>
+INPUT 3: <br>
+Rewards: 26Mar2009(thur), 27Mar2009(fri), 28Mar2009(sat) <br>
+OUTPUT 3: <br>
+Ridgewood <br>
