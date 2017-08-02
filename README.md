@@ -1,4 +1,4 @@
-# hotel
+# Hotel
 Software responsible for finding the cheapest hotel based on dates provided. It came from a Dojo.
 
 Introduction to the problem:
